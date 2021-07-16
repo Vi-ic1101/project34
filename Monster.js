@@ -16,9 +16,9 @@ class Monster {
 	display()
 	{
 			
-			var santaPos=this.body.position;		
+			var pos=this.body.position;		
 			push()
-			translate(santaPos.x, santaPos.y-100);
+			translate(pos.x, pos.y-100);
 			rectMode(CENTER)
 			fill(255,0,255)
 			imageMode(CENTER);
