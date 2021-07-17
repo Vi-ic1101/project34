@@ -22,7 +22,7 @@ class Box {
     rectMode(CENTER);
     strokeWeight(4);
     stroke("black");
-    fill("red");
+    fill(round(random(0,255)));
     rect(0, 0, this.width, this.height);
     pop();
   }

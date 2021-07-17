@@ -105,7 +105,18 @@ box26.display();
   monster.display();
   //console.log(hero)
 
+  textSize(100-50-20)
+  text("use arrow keys",1000,100)
+
+
+  textSize(10)
+  stroke(round(random(0,255)))
+  fill(round(random(0,255)))
   
+  text("use ⬆ key to go up",1500,20)
+  text("use ⬇ key to go down",1500,30)
+  text("use ⬅ key to go back",1500,40)
+  text("use ➡ key to go forward",1500,50)
 }
   /*function mouseDragged (){
     Matter.Body.setPosition(hero.body,{x:mouseX,y:mouseY})
@@ -124,30 +135,25 @@ box26.display();
       rope.attach(hero.body)
     }
     if(keyCode===RIGHT_ARROW){
-    //  mouseReleased();
-      Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:2000,y:0})
-    // Matter.Body.setVelocity(hero.body,{x:velocity.x,y:velocity.y})
-    }
+      mouseReleased();
+      Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:20000,y:0})
+     }
     if(keyCode===LEFT_ARROW){
       mouseReleased();
       Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:-2000,y:0})
-    // Matter.Body.setVelocity(hero.body,{x:velocity.x,y:velocity.y})
-    }
+     }
     if(keyCode===UP_ARROW){
-      //mouseReleased();
+      mouseReleased();
       Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:0,y:-2000})
-    // Matter.Body.setVelocity(hero.body,{x:velocity.x,y:velocity.y})
-    }
+     }
     if(keyCode===DOWN_ARROW){
       mouseReleased();
       Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:0,y:2000})
-    // Matter.Body.setVelocity(hero.body,{x:velocity.x,y:velocity.y})
-    }
+     }
     if(keyCode===DOWN_ARROW + keyCode===RIGHT_ARROW){
       mouseReleased();
       Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:0,y:2000})
-    // Matter.Body.setVelocity(hero.body,{x:velocity.x,y:velocity.y})
-    }
+     }
   }
   async function getTime(){
     var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
