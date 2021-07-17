@@ -136,7 +136,7 @@ box26.display();
     }
     if(keyCode===RIGHT_ARROW){
       mouseReleased();
-      Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:20000,y:0})
+      Matter.Body.applyForce(hero.body,{x:hero.body.position.x,y:hero.body.position.y},{x:2000,y:0})
      }
     if(keyCode===LEFT_ARROW){
       mouseReleased();
